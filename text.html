@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora | Future Web</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #0ea5e9;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(56,189,248,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Aurora</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h2>Welcome to the Future</h2>
+  <p>This is a modern demo website created by ChatGPT. You can modify it however you like.</p>
+  <button class="btn" onclick="showMessage()">Click Me</button>
+</section><section class="features">
+  <div class="card">
+    <h3>Fast</h3>
+    <p>Optimized for speed and performance.</p>
+  </div>  <div class="card">
+    <h3>Modern</h3>
+    <p>Clean and futuristic design.</p>
+  </div>  <div class="card">
+    <h3>Customizable</h3>
+    <p>Easily edit and expand this website.</p>
+  </div>
+</section><footer>
+  <p>© 2026 Aurora Website. Built with ❤️</p>
+</footer><script>
+  function showMessage() {
+    alert("Hello! You clicked the button 🚀");
+  }
+</script></body>
+</html>
